@@ -21,7 +21,7 @@ And the Renovate configuration per this repo.
 We then run:
 
 ```sh
-env NPM_REGISTRY_STAGING=http://localhost NPM_REGISTRY_STAGING_TOKEN=not-a-valid-secret GITHUB_COM_TOKEN="$(gh auth token)" npx renovate@41.97.10 --token "$(gh auth token)" JamieTanna-Mend-testing/npmrc-post-upgrade-commit
+env NPM_REGISTRY_STAGING=http://localhost NPM_REGISTRY_STAGING_TOKEN=not-a-valid-secret GITHUB_COM_TOKEN="$(gh auth token)" npx renovate@41.97.10 --token "$(gh auth token)" JamieTanna-Mend-testing/npmrc-post-upgrade-commit --fork-processing=enabled
 ```
 
 (Note that the usage of the `allowedCommands` being `go ...` is irrelevant - the important thing is that Renovate executes a `postUpgradeCommand` and then commits).
