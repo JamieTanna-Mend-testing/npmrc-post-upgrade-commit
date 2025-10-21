@@ -1,0 +1,9 @@
+{
+  "name": "docs.renovatebot.com",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@10.17.1"
+}
